@@ -50,7 +50,7 @@ export default function Step3Hardware({ state, update }: Props) {
 
       <div>
         <SectionHeader title="Hinge Type" />
-        <div className="grid grid-cols-3 gap-3 mt-3">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
           {HINGE_TYPES.map(h => (
             <OptionCard
               key={h.id}

@@ -50,7 +50,7 @@ export default function Step2Measurements({ state, update }: Props) {
 
       <div>
         <SectionHeader title="Glass Type" />
-        <div className="grid grid-cols-3 gap-3 mt-3">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
           {GLASS_TYPES.map(g => (
             <OptionCard
               key={g.id}

@@ -1,8 +1,6 @@
 'use client';
 
 import React from 'react';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
 import { QuoteState } from '@/types';
 import { TEMPLATES, ENCLOSURE_TYPES, INSTALL_TYPES } from '@/data/options';
 import SectionHeader from '@/components/shared/SectionHeader';
@@ -13,23 +11,13 @@ interface Props {
 }
 
 export default function Step1Configuration({ state, update }: Props) {
-  useGSAP(() => {
-    gsap.from('[data-anim="template-card"]', {
-      opacity: 0,
-      y: 18,
-      scale: 0.95,
-      duration: 0.35,
-      ease: 'power2.out',
-      stagger: { amount: 0.45, from: 'start' },
-    });
-  });
 
   return (
     <div className="space-y-6">
       {/* Templates – 4-column grid with floor-plan SVG thumbnails */}
       <div>
         <SectionHeader title="Shower Template" />
-        <div className="grid grid-cols-4 gap-2 mt-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3">
           {TEMPLATES.map(t => {
             const selected = state.template === t.id;
             return (
@@ -59,7 +47,7 @@ export default function Step1Configuration({ state, update }: Props) {
 
       <div>
         <SectionHeader title="Enclosure Type" />
-        <div className="grid grid-cols-3 gap-3 mt-3">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
           {ENCLOSURE_TYPES.map(e => {
             const selected = state.enclosureType === e.id;
             return (

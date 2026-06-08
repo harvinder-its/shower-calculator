@@ -219,7 +219,7 @@ export default function Home() {
             aria-label="Main navigation"
             className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100"
           >
-            <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
               <a href="https://lusoglass.com" aria-label="LusoGlass — go to homepage">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -262,8 +262,8 @@ export default function Home() {
           </div>
 
           <HeroAnimations />
-        <div className="max-w-6xl mx-auto px-6 pt-16 pb-12 text-center relative">
-            <p data-anim="badge" className="anim-badge inline-flex items-center gap-2 bg-[#e6f3fa] text-[#0070a6] text-xs font-medium px-3 py-1.5 rounded-full mb-6">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 sm:pt-16 pb-8 sm:pb-12 text-center relative">
+            <p className="inline-flex items-center gap-2 bg-[#e6f3fa] text-[#0070a6] text-xs font-medium px-3 py-1.5 rounded-full mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-[#0070a6]" aria-hidden="true" />
               Free instant quote — no commitment
             </p>
@@ -271,14 +271,14 @@ export default function Home() {
             {/* H1 — one per page, primary keyword in first 6 words */}
             <h1
               data-anim="h1"
-              className="anim-h1 text-5xl font-bold text-[#0f0f0f] leading-tight mb-4 tracking-tight"
+              className="text-3xl sm:text-5xl font-bold text-[#0f0f0f] leading-tight mb-4 tracking-tight"
               style={{ fontFamily: "'Google Sans Display', 'Google Sans', sans-serif" }}
             >
               Custom shower enclosure<br />
               <span className="text-[#0070a6]">quote calculator.</span>
             </h1>
 
-            <p data-anim="sub" className="anim-sub text-lg text-gray-500 max-w-xl mx-auto mb-10 font-normal leading-relaxed">
+            <p className="text-lg text-gray-500 max-w-xl mx-auto mb-10 font-normal leading-relaxed">
               Configure your frameless glass shower — choose from 22 enclosure templates,
               glass type, and hardware finish — and get a free instant price estimate in under 2 minutes.
             </p>
@@ -286,7 +286,7 @@ export default function Home() {
             {/* Trust signals */}
             <ul
               data-anim="trust"
-              className="anim-trust flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400 mb-14 list-none p-0"
+              className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400 mb-14 list-none p-0"
               aria-label="Quality guarantees"
             >
               {[
@@ -307,18 +307,18 @@ export default function Home() {
 
         {/* ── Calculator (main interactive content) ── */}
         <main id="main-content" aria-label="Shower quote calculator">
-          <div data-anim="calculator" className="anim-calculator max-w-6xl mx-auto px-6 pb-24">
+          <div className="max-w-6xl mx-auto px-3 sm:px-6 pb-16 sm:pb-24">
             <ShowerCalculator />
           </div>
         </main>
 
         {/* ── FAQ section — feeds JSON-LD FAQPage and adds keyword-rich text ── */}
-        <section data-anim="faq-section" aria-labelledby="faq-heading" className="bg-gray-50 border-t border-gray-100 py-20">
-          <div className="max-w-3xl mx-auto px-6">
+        <section data-anim="faq-section" aria-labelledby="faq-heading" className="bg-gray-50 border-t border-gray-100 py-12 sm:py-20">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6">
             <h2
               id="faq-heading"
               data-anim="faq-heading"
-              className="text-2xl font-bold text-[#0f0f0f] mb-2 tracking-tight"
+              className="text-xl sm:text-2xl font-bold text-[#0f0f0f] mb-2 tracking-tight"
             >
               Frequently asked questions
             </h2>
@@ -332,7 +332,7 @@ export default function Home() {
 
         {/* ── Footer ── */}
         <footer role="contentinfo" className="border-t border-gray-100 py-8">
-          <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-400">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-400">
             <span>© {new Date().getFullYear()} LusoGlass. All rights reserved.</span>
             <nav aria-label="Footer navigation" className="flex items-center gap-6">
               <a href="https://lusoglass.com/privacy" className="hover:text-[#0070a6] transition-colors">Privacy Policy</a>

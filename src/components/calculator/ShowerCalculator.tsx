@@ -1,8 +1,6 @@
 'use client';
 
 import React, { useState, useRef } from 'react';
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
 import { useShowerCalculator } from '@/hooks/useShowerCalculator';
 import Step1Configuration from './Step1Configuration';
 import Step2Measurements from './Step2Measurements';
@@ -87,19 +85,6 @@ export default function ShowerCalculator() {
   const [contactErrors, setContactErrors] = useState<Partial<Record<keyof QuoteState['contact'], string>>>({});
 
   const stepContentRef = useRef<HTMLDivElement>(null);
-  const prevStepRef = useRef<number>(currentStep);
-
-  // Animate step content on step change
-  useGSAP(() => {
-    if (!stepContentRef.current) return;
-    const direction = currentStep > prevStepRef.current ? 1 : -1;
-    prevStepRef.current = currentStep;
-    gsap.fromTo(
-      stepContentRef.current,
-      { opacity: 0, x: direction * 30 },
-      { opacity: 1, x: 0, duration: 0.38, ease: 'power2.out' }
-    );
-  }, { dependencies: [currentStep] });
 
   function handleNext() {
     if (currentStep === 4) {
@@ -123,7 +108,7 @@ export default function ShowerCalculator() {
       <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
 
         {/* Top bar */}
-        <div className="px-8 py-5 border-b border-gray-100">
+        <div className="px-4 sm:px-8 py-4 sm:py-5 border-b border-gray-100 overflow-x-auto">
           <StepIndicator current={currentStep} total={4} />
         </div>
 
@@ -151,9 +136,9 @@ export default function ShowerCalculator() {
           </div>
         )}
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px]">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px]">
           {/* Left: form */}
-          <div className="p-8 border-r border-gray-100 overflow-y-auto max-h-[72vh]">
+          <div className="p-4 sm:p-8 border-b lg:border-b-0 lg:border-r border-gray-100">
             <div ref={stepContentRef}>
             <div className="mb-6">
               <h2 className="text-xl font-semibold text-[#0f0f0f]">{STEPS[currentStep - 1].label}</h2>
@@ -194,7 +179,7 @@ export default function ShowerCalculator() {
           </div>
 
           {/* Right: 3D preview */}
-          <div className="bg-gray-50/60 p-8 flex flex-col gap-5">
+          <div className="bg-gray-50/60 p-4 sm:p-8 flex flex-col gap-5">
             <div className="flex items-center justify-between">
               <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">Live Preview</p>
               <span className="text-[10px] text-gray-300 font-medium">Three.js · WebGL</span>
