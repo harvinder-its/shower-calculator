@@ -264,7 +264,6 @@ export default function Home() {
           <HeroAnimations />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 sm:pt-16 pb-8 sm:pb-12 text-center relative">
             <p className="inline-flex items-center gap-2 bg-[#e6f3fa] text-[#0070a6] text-xs font-medium px-3 py-1.5 rounded-full mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#0070a6]" aria-hidden="true" />
               Free instant quote — no commitment
             </p>
 
