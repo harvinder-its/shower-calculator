@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --luso-blue: #0070a6;
+  --luso-blue-dark: #005a87;
+  --luso-blue-light: #e6f3fa;
+  --luso-black: #0f0f0f;
+  --luso-gray: #6b7280;
+  --luso-border: #e5e7eb;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background: #ffffff;
+  --color-foreground: #0f0f0f;
+  --font-sans: 'Google Sans', system-ui, -apple-system, sans-serif;
+  --color-luso-blue: #0070a6;
+  --color-luso-blue-dark: #005a87;
+  --color-luso-blue-light: #e6f3fa;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #0f0f0f;
+  font-family: 'Google Sans', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
+
+/* Smooth scrollbar */
+* { scroll-behavior: smooth; }
+
+/* Hero entrance animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.anim-badge       { animation: fadeInDown 0.45s cubic-bezier(0.16,1,0.3,1) both; }
+.anim-h1          { animation: fadeInUp   0.6s  cubic-bezier(0.16,1,0.3,1) 0.25s both; }
+.anim-sub         { animation: fadeInUp   0.5s  cubic-bezier(0.16,1,0.3,1) 0.4s  both; }
+.anim-trust       { animation: fadeIn     0.5s  cubic-bezier(0.16,1,0.3,1) 0.55s both; }
+.anim-calculator  { animation: fadeInUp   0.65s cubic-bezier(0.16,1,0.3,1) 0.5s  both; }
