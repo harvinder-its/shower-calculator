@@ -29,7 +29,7 @@ export default function Step1Configuration({ state, update }: Props) {
                 data-anim="template-card"
                 className={`flex flex-col items-center gap-1 p-2 rounded-lg cursor-pointer transition-all text-center ${
                   selected
-                    ? 'border-2 border-[#0070a6] bg-[#e6f3fa] shadow-md'
+                    ? 'border-2 border-[#0f6ebd] bg-[#e6f3fa] shadow-md'
                     : 'border border-gray-200 bg-white hover:shadow-md hover:border-gray-300'
                 }`}
               >
@@ -56,7 +56,7 @@ export default function Step1Configuration({ state, update }: Props) {
                 type="button"
                 onClick={() => update('enclosureType', e.id)}
                 className={`flex flex-col gap-1 p-3 rounded-lg text-left transition-all ${
-                  selected ? 'border-2 border-[#0070a6] bg-[#e6f3fa] shadow-md' : 'border border-gray-200 bg-white hover:shadow-md'
+                  selected ? 'border-2 border-[#0f6ebd] bg-[#e6f3fa] shadow-md' : 'border border-gray-200 bg-white hover:shadow-md'
                 }`}
               >
                 <span className="font-semibold text-gray-800 text-sm">{e.label}</span>
@@ -78,7 +78,7 @@ export default function Step1Configuration({ state, update }: Props) {
                 type="button"
                 onClick={() => update('installType', i.id)}
                 className={`flex flex-col gap-1 p-3 rounded-lg text-left transition-all ${
-                  selected ? 'border-2 border-[#0070a6] bg-[#e6f3fa] shadow-md' : 'border border-gray-200 bg-white hover:shadow-md'
+                  selected ? 'border-2 border-[#0f6ebd] bg-[#e6f3fa] shadow-md' : 'border border-gray-200 bg-white hover:shadow-md'
                 }`}
               >
                 <span className="font-semibold text-gray-800 text-sm">{i.label}</span>

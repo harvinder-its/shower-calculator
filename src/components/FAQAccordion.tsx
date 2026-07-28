@@ -39,14 +39,14 @@ export default function FAQAccordion() {
               aria-expanded={open === i}
               className="w-full flex items-center justify-between py-5 text-left gap-4 group"
             >
-              <span className="font-semibold text-[#0f0f0f] text-sm group-hover:text-[#0070a6] transition-colors">
+              <span className="font-semibold text-[#0f0f0f] text-sm group-hover:text-[#0f6ebd] transition-colors">
                 {q}
               </span>
               <span
                 className="shrink-0 w-5 h-5 rounded-full border border-gray-200 flex items-center justify-center transition-all"
                 style={{
-                  background: open === i ? '#0070a6' : 'white',
-                  borderColor: open === i ? '#0070a6' : undefined,
+                  background: open === i ? '#0f6ebd' : 'white',
+                  borderColor: open === i ? '#0f6ebd' : undefined,
                 }}
                 aria-hidden="true"
               >

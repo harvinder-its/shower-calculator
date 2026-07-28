@@ -31,7 +31,7 @@ export default function NavigationButtons({
           <button
             type="button"
             onClick={onPrev}
-            className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-[#0070a6] transition-colors"
+            className="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-[#0f6ebd] transition-colors"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -53,7 +53,7 @@ export default function NavigationButtons({
           type="button"
           onClick={onSubmit}
           disabled={isSubmitting || !canNext}
-          className="flex items-center gap-2 bg-[#0070a6] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#005a87] transition-colors disabled:opacity-40 shadow-sm"
+          className="flex items-center gap-2 bg-[#0f6ebd] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#005a87] transition-colors disabled:opacity-40 shadow-sm"
         >
           {isSubmitting ? (
             <>
@@ -77,7 +77,7 @@ export default function NavigationButtons({
           type="button"
           onClick={onNext}
           disabled={!canNext}
-          className="flex items-center gap-2 bg-[#0070a6] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#005a87] transition-colors disabled:opacity-40 shadow-sm"
+          className="flex items-center gap-2 bg-[#0f6ebd] text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-[#005a87] transition-colors disabled:opacity-40 shadow-sm"
         >
           Continue
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

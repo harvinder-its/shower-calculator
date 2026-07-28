@@ -12,7 +12,7 @@ export default function RestartModal({ onConfirm, onCancel }: RestartModalProps)
     <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full">
         <div className="w-10 h-10 rounded-full bg-[#e6f3fa] flex items-center justify-center mb-4">
-          <svg className="w-5 h-5 text-[#0070a6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 text-[#0f6ebd]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
           </svg>
         </div>
@@ -24,7 +24,7 @@ export default function RestartModal({ onConfirm, onCancel }: RestartModalProps)
             Cancel
           </button>
           <button onClick={onConfirm}
-            className="flex-1 px-4 py-2.5 rounded-full bg-[#0070a6] text-white text-sm font-medium hover:bg-[#005a87] transition-colors">
+            className="flex-1 px-4 py-2.5 rounded-full bg-[#0f6ebd] text-white text-sm font-medium hover:bg-[#005a87] transition-colors">
             Start over
           </button>
         </div>

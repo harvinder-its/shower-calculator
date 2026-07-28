@@ -29,8 +29,8 @@ function StepIndicator({ current, total }: { current: number; total: number }) {
             <div className="flex items-center gap-2 px-1">
               <div
                 className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-semibold transition-all ${
-                  done   ? 'bg-[#0070a6] text-white' :
-                  active ? 'bg-[#0f0f0f] text-white ring-4 ring-[#0070a6]/20' :
+                  done   ? 'bg-[#0f6ebd] text-white' :
+                  active ? 'bg-[#0f0f0f] text-white ring-4 ring-[#0f6ebd]/20' :
                            'bg-gray-100 text-gray-400'
                 }`}
               >
@@ -41,13 +41,13 @@ function StepIndicator({ current, total }: { current: number; total: number }) {
                 ) : i + 1}
               </div>
               <span className={`text-xs font-medium hidden sm:block transition-colors ${
-                active ? 'text-[#0f0f0f]' : done ? 'text-[#0070a6]' : 'text-gray-400'
+                active ? 'text-[#0f0f0f]' : done ? 'text-[#0f6ebd]' : 'text-gray-400'
               }`}>
                 {STEPS[i].label}
               </span>
             </div>
             {i < total - 1 && (
-              <div className={`flex-1 h-px mx-2 transition-colors ${done ? 'bg-[#0070a6]' : 'bg-gray-200'}`} style={{ minWidth: 24 }} />
+              <div className={`flex-1 h-px mx-2 transition-colors ${done ? 'bg-[#0f6ebd]' : 'bg-gray-200'}`} style={{ minWidth: 24 }} />
             )}
           </React.Fragment>
         );
@@ -114,9 +114,9 @@ export default function ShowerCalculator() {
 
         {/* Success banner */}
         {submitSuccess && (
-          <div className="mx-6 mt-6 bg-[#e6f3fa] border border-[#0070a6]/20 rounded-xl px-6 py-4 flex items-start justify-between gap-4">
+          <div className="mx-6 mt-6 bg-[#e6f3fa] border border-[#0f6ebd]/20 rounded-xl px-6 py-4 flex items-start justify-between gap-4">
             <div className="flex items-start gap-3">
-              <div className="w-8 h-8 rounded-full bg-[#0070a6] flex items-center justify-center shrink-0 mt-0.5">
+              <div className="w-8 h-8 rounded-full bg-[#0f6ebd] flex items-center justify-center shrink-0 mt-0.5">
                 <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                 </svg>
@@ -124,13 +124,13 @@ export default function ShowerCalculator() {
               <div>
                 <p className="font-semibold text-[#0f0f0f] text-sm">Quote submitted — thank you, {state.contact.name}!</p>
                 <p className="text-xs text-gray-500 mt-0.5">
-                  We&apos;ll be in touch at <span className="text-[#0070a6]">{state.contact.email}</span> shortly.
-                  {estimate && <> Your estimated range is <strong className="text-[#0070a6]">${estimate.min.toLocaleString()}–${estimate.max.toLocaleString()}</strong>.</>}
+                  We&apos;ll be in touch at <span className="text-[#0f6ebd]">{state.contact.email}</span> shortly.
+                  {estimate && <> Your estimated range is <strong className="text-[#0f6ebd]">${estimate.min.toLocaleString()}–${estimate.max.toLocaleString()}</strong>.</>}
                 </p>
               </div>
             </div>
             <button onClick={() => setSubmitSuccess(false)}
-              className="text-xs text-[#0070a6] hover:underline shrink-0 mt-1 font-medium">
+              className="text-xs text-[#0f6ebd] hover:underline shrink-0 mt-1 font-medium">
               Edit
             </button>
           </div>
@@ -193,7 +193,7 @@ export default function ShowerCalculator() {
                 {state.width}" wide × {state.height}" tall
               </span>
               {state.glassType && (
-                <span className="text-xs bg-white border border-gray-100 rounded-full px-3 py-1 text-[#0070a6] font-medium shadow-sm capitalize">
+                <span className="text-xs bg-white border border-gray-100 rounded-full px-3 py-1 text-[#0f6ebd] font-medium shadow-sm capitalize">
                   {state.glassType.replace(/-/g, ' ')}
                 </span>
               )}
@@ -201,9 +201,9 @@ export default function ShowerCalculator() {
 
             {/* Price — only after submit */}
             {submitSuccess && estimate && (
-              <div className="bg-white rounded-xl border border-[#0070a6]/20 p-5 shadow-sm">
+              <div className="bg-white rounded-xl border border-[#0f6ebd]/20 p-5 shadow-sm">
                 <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">Estimated Range</p>
-                <p className="text-3xl font-bold text-[#0070a6]">
+                <p className="text-3xl font-bold text-[#0f6ebd]">
                   ${estimate.min.toLocaleString()} <span className="text-gray-300 font-light">–</span> ${estimate.max.toLocaleString()}
                 </p>
                 <p className="text-xs text-gray-400 mt-1">

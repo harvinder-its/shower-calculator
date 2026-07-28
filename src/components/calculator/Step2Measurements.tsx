@@ -23,7 +23,7 @@ function DimensionInput({ label, value, min, max, onChange }: {
         max={max}
         value={value}
         onChange={e => onChange(Number(e.target.value))}
-        className="border border-gray-300 rounded px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0070a6]"
+        className="border border-gray-300 rounded px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0f6ebd]"
       />
       <input
         type="range"
@@ -31,7 +31,7 @@ function DimensionInput({ label, value, min, max, onChange }: {
         max={max}
         value={value}
         onChange={e => onChange(Number(e.target.value))}
-        className="accent-[#0070a6]"
+        className="accent-[#0f6ebd]"
       />
     </div>
   );
@@ -59,7 +59,7 @@ export default function Step2Measurements({ state, update }: Props) {
               isSelected={state.glassType === g.id}
               onClick={() => update('glassType', g.id)}
             >
-              <span className="text-xs text-[#0070a6] font-medium">${g.priceMin}–${g.priceMax}/sqft</span>
+              <span className="text-xs text-[#0f6ebd] font-medium">${g.priceMin}–${g.priceMax}/sqft</span>
             </OptionCard>
           ))}
         </div>

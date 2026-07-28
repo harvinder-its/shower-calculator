@@ -223,11 +223,11 @@ export default function Home() {
               <a href="https://lusoglass.com" aria-label="LusoGlass — go to homepage">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/lusoglass-logo.webp"
+                  src="/lusoglass-logo.png"
                   alt="LusoGlass — custom frameless shower enclosures"
-                  width={140}
+                  width={250}
                   height={48}
-                  className="h-10 w-auto object-contain"
+                  className="h-7 sm:h-10 w-auto object-contain"
                 />
               </a>
 
@@ -236,14 +236,14 @@ export default function Home() {
                   href="https://lusoglass.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#0070a6] transition-colors hidden sm:block"
+                  className="hover:text-[#0f6ebd] transition-colors hidden sm:block"
                 >
                   lusoglass.com
                 </a>
                 <a
                   href="tel:+18005550199"
                   aria-label="Call LusoGlass"
-                  className="bg-[#0070a6] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#005a87] transition-colors"
+                  className="bg-[#0f6ebd] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#005a87] transition-colors"
                 >
                   Get in Touch
                 </a>
@@ -256,14 +256,14 @@ export default function Home() {
         <div className="relative pt-16 overflow-hidden" role="region" aria-label="Hero">
           <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
             <div className="absolute -top-40 -left-40 w-[700px] h-[700px] rounded-full opacity-[0.07]"
-                 style={{ background: 'radial-gradient(circle, #0070a6 0%, transparent 70%)' }} />
+                 style={{ background: 'radial-gradient(circle, #0f6ebd 0%, transparent 70%)' }} />
             <div className="absolute -top-20 right-0 w-[500px] h-[500px] rounded-full opacity-[0.05]"
-                 style={{ background: 'radial-gradient(circle, #0070a6 0%, transparent 70%)' }} />
+                 style={{ background: 'radial-gradient(circle, #0f6ebd 0%, transparent 70%)' }} />
           </div>
 
           <HeroAnimations />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 sm:pt-16 pb-8 sm:pb-12 text-center relative">
-            <p className="inline-flex items-center gap-2 bg-[#e6f3fa] text-[#0070a6] text-xs font-medium px-3 py-1.5 rounded-full mb-6">
+            <p className="inline-flex items-center gap-2 bg-[#e6f3fa] text-[#0f6ebd] text-xs font-medium px-3 py-1.5 rounded-full mb-6">
               Free instant quote — no commitment
             </p>
 
@@ -274,7 +274,7 @@ export default function Home() {
               style={{ fontFamily: "'Google Sans Display', 'Google Sans', sans-serif" }}
             >
               Custom shower enclosure<br />
-              <span className="text-[#0070a6]">quote calculator.</span>
+              <span className="text-[#0f6ebd]">quote calculator.</span>
             </h1>
 
             <p className="text-lg text-gray-500 max-w-xl mx-auto mb-10 font-normal leading-relaxed">
@@ -294,7 +294,7 @@ export default function Home() {
                 'Lifetime warranty',
               ].map(item => (
                 <li key={item} className="flex items-center gap-2">
-                  <svg className="w-4 h-4 text-[#0070a6] shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <svg className="w-4 h-4 text-[#0f6ebd] shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
                   {item}
@@ -334,9 +334,9 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-400">
             <span>© {new Date().getFullYear()} LusoGlass. All rights reserved.</span>
             <nav aria-label="Footer navigation" className="flex items-center gap-6">
-              <a href="https://lusoglass.com/privacy" className="hover:text-[#0070a6] transition-colors">Privacy Policy</a>
-              <a href="https://lusoglass.com/terms"   className="hover:text-[#0070a6] transition-colors">Terms of Service</a>
-              <a href="https://lusoglass.com"         className="hover:text-[#0070a6] transition-colors">lusoglass.com</a>
+              <a href="https://lusoglass.com/privacy" className="hover:text-[#0f6ebd] transition-colors">Privacy Policy</a>
+              <a href="https://lusoglass.com/terms"   className="hover:text-[#0f6ebd] transition-colors">Terms of Service</a>
+              <a href="https://lusoglass.com"         className="hover:text-[#0f6ebd] transition-colors">lusoglass.com</a>
             </nav>
           </div>
         </footer>

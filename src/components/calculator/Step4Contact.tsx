@@ -59,7 +59,7 @@ export default function Step4Contact({ state, updateContact, errors }: Props) {
             value={c.name}
             onChange={e => updateContact('name', e.target.value)}
             placeholder="Jane Smith"
-            className={`border rounded px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0070a6] ${errors.name ? 'border-red-400' : 'border-gray-300'}`}
+            className={`border rounded px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0f6ebd] ${errors.name ? 'border-red-400' : 'border-gray-300'}`}
           />
         </Field>
 
@@ -69,7 +69,7 @@ export default function Step4Contact({ state, updateContact, errors }: Props) {
             value={c.phone}
             onChange={e => updateContact('phone', e.target.value)}
             placeholder="(555) 555-5555"
-            className={`border rounded px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0070a6] ${errors.phone ? 'border-red-400' : 'border-gray-300'}`}
+            className={`border rounded px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0f6ebd] ${errors.phone ? 'border-red-400' : 'border-gray-300'}`}
           />
         </Field>
 
@@ -79,7 +79,7 @@ export default function Step4Contact({ state, updateContact, errors }: Props) {
             value={c.email}
             onChange={e => updateContact('email', e.target.value)}
             placeholder="jane@example.com"
-            className={`border rounded px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0070a6] ${errors.email ? 'border-red-400' : 'border-gray-300'}`}
+            className={`border rounded px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0f6ebd] ${errors.email ? 'border-red-400' : 'border-gray-300'}`}
           />
         </Field>
 
@@ -90,7 +90,7 @@ export default function Step4Contact({ state, updateContact, errors }: Props) {
             onChange={e => updateContact('zip', e.target.value)}
             placeholder="90210"
             maxLength={10}
-            className={`border rounded px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0070a6] ${errors.zip ? 'border-red-400' : 'border-gray-300'}`}
+            className={`border rounded px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0f6ebd] ${errors.zip ? 'border-red-400' : 'border-gray-300'}`}
           />
         </Field>
 
@@ -100,7 +100,7 @@ export default function Step4Contact({ state, updateContact, errors }: Props) {
             onChange={e => updateContact('notes', e.target.value)}
             placeholder="Any special requirements, existing tile work, etc."
             rows={3}
-            className="border border-gray-300 rounded px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0070a6] resize-none"
+            className="border border-gray-300 rounded px-3 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0f6ebd] resize-none"
           />
         </Field>
       </div>
