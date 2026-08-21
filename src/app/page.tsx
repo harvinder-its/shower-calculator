@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Custom Frameless Shower Quote Calculator | LusoGlass',
 
   description:
-    'Design your custom frameless shower enclosure online and get a free instant quote. Choose from 22 glass door configurations, hardware finishes, and glass types. Serving residential and commercial clients — professional installation included.',
+    'Design your custom frameless shower enclosure online and get a free instant quote. Choose from 22 glass door configurations, hardware finishes, and glass types. Serving residential and commercial clients, with professional installation included.',
 
   // Canonical URL (update to production domain when deploying)
   alternates: {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         url: 'https://lusoglass.com/og-shower-calculator.jpg', // replace with actual OG image
         width: 1200,
         height: 630,
-        alt: 'LusoGlass custom shower calculator — design your frameless enclosure online',
+        alt: 'LusoGlass custom shower calculator: design your frameless enclosure online',
       },
     ],
     locale: 'en_US',
@@ -119,7 +119,7 @@ const jsonLd = {
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
         url: 'https://lusoglass.com/shower-calculator',
-        description: 'Free instant quote — final price confirmed after on-site measurement.',
+        description: 'Free instant quote. Final price confirmed after on-site measurement.',
       },
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
@@ -139,7 +139,7 @@ const jsonLd = {
       url: 'https://lusoglass.com/shower-calculator',
       name: 'Custom Frameless Shower Quote Calculator | LusoGlass',
       description:
-        'Interactive shower enclosure configurator — choose template, dimensions, glass type, and hardware to get a free instant price estimate.',
+        'Interactive shower enclosure configurator. Choose template, dimensions, glass type, and hardware to get a free instant price estimate.',
       isPartOf: { '@id': 'https://lusoglass.com/#business' },
       about: { '@id': 'https://lusoglass.com/shower-calculator#service' },
       breadcrumb: {
@@ -220,11 +220,11 @@ export default function Home() {
             className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100"
           >
             <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
-              <a href="https://lusoglass.com" aria-label="LusoGlass — go to homepage">
+              <a href="https://lusoglass.com" aria-label="LusoGlass: go to homepage">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/lusoglass-logo.png"
-                  alt="LusoGlass — custom frameless shower enclosures"
+                  alt="LusoGlass custom frameless shower enclosures"
                   width={250}
                   height={48}
                   className="h-7 sm:h-10 w-auto object-contain"
@@ -263,8 +263,11 @@ export default function Home() {
 
           <HeroAnimations />
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 sm:pt-16 pb-8 sm:pb-12 text-center relative">
-            <p className="inline-flex items-center gap-2 bg-[#e6f3fa] text-[#0f6ebd] text-xs font-medium px-3 py-1.5 rounded-full mb-6">
-              Free instant quote — no commitment
+            <p className="inline-flex items-center gap-2 bg-gradient-to-b from-[#eef7fc] to-[#dcedf7] text-[#0f6ebd] text-xs font-medium px-3.5 py-1.5 rounded-full mb-6 border border-[#0f6ebd]/15 shadow-[0_1px_2px_rgba(15,110,189,0.08)]">
+              <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M10 2.5l1.6 4.9 5.15.05-4.1 3.15 1.55 4.9L10 12.4l-4.2 3.1 1.55-4.9-4.1-3.15 5.15-.05L10 2.5z" fill="#0f6ebd"/>
+              </svg>
+              Free instant quote, no commitment
             </p>
 
             {/* H1 — one per page, primary keyword in first 6 words */}
@@ -278,8 +281,8 @@ export default function Home() {
             </h1>
 
             <p className="text-lg text-gray-500 max-w-xl mx-auto mb-10 font-normal leading-relaxed">
-              Configure your frameless glass shower — choose from 22 enclosure templates,
-              glass type, and hardware finish — and get a free instant price estimate in under 2 minutes.
+              Configure your frameless glass shower, choose from 22 enclosure templates,
+              glass type, and hardware finish, and get a free instant price estimate in under 2 minutes.
             </p>
 
             {/* Trust signals */}

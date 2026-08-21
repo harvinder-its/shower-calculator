@@ -122,7 +122,7 @@ export default function ShowerCalculator() {
                 </svg>
               </div>
               <div>
-                <p className="font-semibold text-[#0f0f0f] text-sm">Quote submitted — thank you, {state.contact.name}!</p>
+                <p className="font-semibold text-[#0f0f0f] text-sm">Quote submitted, thank you, {state.contact.name}!</p>
                 <p className="text-xs text-gray-500 mt-0.5">
                   We&apos;ll be in touch at <span className="text-[#0f6ebd]">{state.contact.email}</span> shortly.
                   {estimate && <> Your estimated range is <strong className="text-[#0f6ebd]">${estimate.min.toLocaleString()}–${estimate.max.toLocaleString()}</strong>.</>}

@@ -109,7 +109,7 @@ export const TEMPLATES: { id: ShowerTemplate; label: string; description: string
 // ─── Other option arrays ───────────────────────────────────────────────────
 
 export const ENCLOSURE_TYPES: { id: EnclosureType; label: string; description: string }[] = [
-  { id: 'frameless',      label: 'Frameless',      description: 'No metal frame — clean modern look' },
+  { id: 'frameless',      label: 'Frameless',      description: 'No metal frame, clean modern look' },
   { id: 'semi-frameless', label: 'Semi-Frameless', description: 'Minimal framing on edges only' },
   { id: 'framed',         label: 'Framed',          description: 'Full metal frame around glass' },
 ];
