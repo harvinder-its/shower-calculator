@@ -309,6 +309,9 @@ export default function ShowerPreview3D({ state }: Props) {
     controls.dampingFactor = 0.08;
     controls.minDistance = 1.5;
     controls.maxDistance = 14;
+    // Keep the camera on a vertical (front-on) viewing band — no top-down view.
+    controls.minPolarAngle = Math.PI / 4;       // 45° — can't tilt to look from above
+    controls.maxPolarAngle = Math.PI / 2 + 0.15; // just past level — can't dip below the floor
     controls.target.set(0, 2, 0);
     controls.update();
     controlsRef.current = controls;

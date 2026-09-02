@@ -14,7 +14,7 @@ export default function Step1Configuration({ state, update }: Props) {
 
   return (
     <div className="space-y-6">
-      {/* Templates – 4-column grid with floor-plan SVG thumbnails */}
+      {/* Templates – 4-column grid with front-elevation SVG thumbnails */}
       <div>
         <SectionHeader title="Shower Template" />
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3">
@@ -33,10 +33,10 @@ export default function Step1Configuration({ state, update }: Props) {
                     : 'border border-gray-200 bg-white hover:shadow-md hover:border-gray-300'
                 }`}
               >
-                {/* Floor-plan SVG thumbnail */}
+                {/* Front-elevation SVG thumbnail */}
                 <div
                   className="w-full rounded overflow-hidden bg-white"
-                  dangerouslySetInnerHTML={{ __html: t.planSvg }}
+                  dangerouslySetInnerHTML={{ __html: t.elevationSvg }}
                 />
                 <span className="text-[10px] font-semibold text-gray-700 leading-tight">{t.label}</span>
               </button>
